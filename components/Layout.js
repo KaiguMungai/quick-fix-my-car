@@ -1,8 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { ToastContainer } from 'react-toastify';
 import React from 'react';
+import 'react-toastify/dist/ReactToastify.css';
+import { useSession } from 'next-auth/react';
 
 export default function Layout({ title, children }) {
+  const { status, data: session } = useSession();
   return (
     <>
       <Head>
@@ -14,6 +18,8 @@ export default function Layout({ title, children }) {
         <link rel="icon" href="/icon/favicon.ico" />
       </Head>
 
+      <ToastContainer position="bottom-center" limit={1} />
+
       <div className="flex min-h-screen flex-col justify-between">
         <header>
           <nav className="flex h-40 items-center px-5 shadow-md justify-between">
@@ -21,12 +27,15 @@ export default function Layout({ title, children }) {
               <a className="text-3xl font-bold"> Quick Fix My Car</a>
             </Link>
             <div>
-              <Link href="/login" legacyBehavior>
-                <a className="px-5 link text-lg">Log In</a>
-              </Link>
-              <Link href="/signin" legacyBehavior>
-                <a className="px-5 link text-lg">Register</a>
-              </Link>
+              {status === 'loading' ? (
+                'Loading'
+              ) : session?.user ? (
+                session.user.username
+              ) : (
+                <Link href="/login" legacyBehavior>
+                  <a className="px-5 link text-lg">Log In</a>
+                </Link>
+              )}
             </div>
           </nav>
         </header>
