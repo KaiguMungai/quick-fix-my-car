@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 export default function BreakdownType({ breakdown }) {
+  const router = useRouter();
   return (
     <div className="card">
       <img
@@ -14,13 +15,14 @@ export default function BreakdownType({ breakdown }) {
         <h2 className="text-lg font-bold">{breakdown.name}</h2>
 
         <p className="mb-2 py-2">{breakdown.description}</p>
-        <Link href={`/breakdown/${breakdown.slug}`} legacyBehavior>
-          <a>
-            <button className="primary-button" type="button">
-              View More Details
-            </button>
-          </a>
-        </Link>
+
+        <button
+          onClick={() => router.push('login?redirect=/slug')}
+          className="primary-button"
+          type="button"
+        >
+          View More Details
+        </button>
       </div>
     </div>
   );

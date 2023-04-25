@@ -22,10 +22,10 @@ export default function Layout({ title, children }) {
             </Link>
             <div>
               <Link href="/login" legacyBehavior>
-                <a className="px-5 text-lg">Log In</a>
+                <a className="px-5 link text-lg">Log In</a>
               </Link>
               <Link href="/signin" legacyBehavior>
-                <a className="px-5 text-lg">Sign In</a>
+                <a className="px-5 link text-lg">Register</a>
               </Link>
             </div>
           </nav>
