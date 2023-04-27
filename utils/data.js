@@ -44,42 +44,30 @@ const data = {
       symptom7: 'Difficulty in accelerating: ',
       description7:
         'A flat tire can cause the car to struggle when accelerating, especially when the flat tire is on the driving axle.',
-      repairslug: 'flat-tire repair',
+      repairslug: 'flat tyre repair',
       step1: 'Find a safe location:',
       step1details:
         'If you have a flat tire, pull over to a safe location off the road, away from traffic. Make sure the surface is level and stable.',
       step2: 'Turn off the engine and engage the parking brake:',
       step2details:
         'Turn off the engine and engage the parking brake to prevent the car from rolling.',
-      step3: 'Remove the spare tire and tools:',
+      step3: 'Loosen the lug nuts and raise the car',
       step3details:
-        'Locate the spare tire and tools in the trunk or under the car. The tools usually include a lug wrench and a jack.',
-      step4: 'Loosen the lug nuts:',
+        'Locate the spare tire and tools in the trunk or under the car. The tools usually include a lug wrench and a jack. Use the lug wrench to loosen the lug nuts on the flat tire, but do not remove them yet. Use the jack to raise the car until the flat tire is off the ground. Refer to your car-manual for the correct jack placement and lifting points.',
+      step4: 'Remove the lug nuts and flat tire:',
       step4details:
-        'Use the lug wrench to loosen the lug nuts on the flat tire, but do not remove them yet.',
-      step5: 'Raise the car with the jack:',
-      step5details:
-        'Use the jack to raise the car until the flat tire is off the ground. Refer to your car-manual for the correct jack placement and lifting points.',
-      step6: 'Remove the lug nuts and flat tire:',
-      step6details:
         'Use the lug wrench to remove the lug nuts and take off the flat tire.',
-      step7: 'Install the spare tire:',
-      step7details:
+      step5: 'Install the spare tire:',
+      step5details:
         'Place the spare tire onto the wheel studs and hand tighten the lug nuts.',
-      step8: 'Lower the car:',
-      step8details:
-        'Use the jack to lower the car until the spare tire is touching the ground.',
-      step9: 'Tighten the lug nuts:',
-      step9details:
-        'Use the lug wrench to tighten the lug nuts in a star pattern until they are snug.',
-      step10: 'Lower the car completely and remove the jack:',
-      step10details:
-        'Use the jack to lower the car completely and remove the jack.',
-      step11: 'Check the tire pressure:',
-      step11details:
+      step6: 'Lower the car, Tighten the lug nuts and remove the jack:',
+      step6details:
+        'Use the jack to lower the car until the spare tire is only firmly touching the ground. Use the lug wrench to tighten the lug nuts in a star pattern until they are snug. Use the jack to lower the car completely and remove the jack.',
+      step7: 'Check the tire pressure:',
+      step7details:
         'Check the tire pressure of the spare tire and adjust it as needed.',
-      step12: 'Replace the flat tire:',
-      step12details:
+      step8: 'Replace the flat tire:',
+      step8details:
         'Store the flat tire and tools in the trunk, and take the flat tire to a tire repair shop to be repaired or replaced.',
     },
     {
@@ -108,6 +96,7 @@ const data = {
       symptom7: 'Smell of rotten eggs:',
       description7:
         'If you notice a smell of rotten eggs or sulfur around the battery, it may be leaking and needs to be replaced.',
+      repairslug: 'dead battery repair',
       step1: 'Safety precautions:',
       step1details:
         'Before attempting to jump-start a battery, make sure you wear protective gloves and eyewear, and ensure that both cars are turned off.',
@@ -159,6 +148,7 @@ const data = {
       symptom7: 'Coolant leaking:',
       description7:
         'If the engine is overheating, it may cause the coolant to leak from the engine or radiator.',
+      repairslug: 'overheated engine repair',
       step1: 'Pull over safely: ',
       step1details:
         'If you notice that your engine is overheating, pull over to a safe location as soon as possible. Turn off the engine and allow it to cool down for at least 30 minutes before attempting any repairs.',
@@ -178,8 +168,10 @@ const data = {
       step6details:
         'The water pump is responsible for circulating the coolant throughout the engine. If it is not working, the coolant may not be able to flow properly, leading to an overheated engine. Check the water pump for any signs of damage or wear. If necessary, replace the water pump.',
       step7: 'Restart the engine and monitor the temperature:',
-      step7details:
-        'Once you have completed the repairs, start the engine and monitor the temperature gauge. Make sure the temperature stays within the normal range. If it starts to rise again, pull over and check for any additional problems.',
+      step7details: 'Once you have completed the repairs, start the engine.',
+      step8: 'Monitor the Temperature Gauge',
+      step8details:
+        'Make sure the temperature stays within the normal range. If it starts to rise again, pull over and check for any additional problems.',
     },
     {
       name: 'Worn-Out Spark Plugs',
@@ -207,6 +199,7 @@ const data = {
       symptom7: 'Increased exhaust emissions:',
       description7:
         'Worn-out spark plugs can cause an increase in exhaust emissions, which can lead to failed emissions tests.',
+      repairslug: 'worn-out spark plugs repair',
       step1: 'Gather the tools:',
       step1details:
         'You will need a spark plug socket, a ratchet or wrench, and a spark plug gap gauge.',
@@ -258,26 +251,30 @@ const data = {
       symptom7: 'Electrical problems:',
       description7:
         'A broken taillight or headlight can also cause electrical problems, such as a blown fuse or a short circuit.',
-      step1: 'Purchase a replacement taillight:',
+      repairslug: 'broken taillight repair',
+      step1: 'Safety Precautions',
       step1details:
-        ' Before beginning the repair, make sure to purchase a replacement taillight that is compatible with the make and model of your car.',
-      step2: 'Locate the broken taillight:',
+        'Turn off the Car engine and remove the key from ignition. The electrical system of the car connects all electrics and electronics with the battery. Turning off and removing the key from ignition disconnects all electronics and electrics of the car.',
+      step2: 'Purchase a replacement taillight:',
       step2details:
-        'Identify the location of the broken taillight. Depending on the make and model of your vehicle, it may be necessary to remove the taillight assembly to replace the broken part.',
-      step3: 'Remove the broken taillight:',
+        ' Before beginning the repair, make sure to purchase a replacement taillight that is compatible with the make and model of your car.',
+      step3: 'Locate the broken taillight:',
       step3details:
-        'Depending on how the taillight is secured, you may need to use a screwdriver or socket wrench to remove any screws or bolts holding the taillight in place. Be careful not to damage any wires or connections when removing the taillight.',
-      step4: 'Disconnect the wiring harness:',
+        'Identify the location of the broken taillight. Depending on the make and model of your vehicle, it may be necessary to remove the taillight assembly to replace the broken part.',
+      step4: 'Remove the broken taillight:',
       step4details:
-        'Once the taillight is removed, disconnect the wiring harness by gently pulling it away from the taillight. Be sure to note the orientation of the wires so you can reconnect them properly.',
-      step5: 'Install the new taillight:',
+        'Depending on how the taillight is secured, you may need to use a screwdriver or socket wrench to remove any screws or bolts holding the taillight in place. Be careful not to damage any wires or connections when removing the taillight.',
+      step5: 'Disconnect the wiring harness:',
       step5details:
-        'Carefully install the replacement taillight by connecting the wiring harness and securing it in place with any screws or bolts that were removed.',
-      step6: 'Test the taillight: ',
+        'Once the taillight is removed, disconnect the wiring harness by gently pulling it away from the taillight. Be sure to note the orientation of the wires so you can reconnect them properly.',
+      step6: 'Install the new taillight:',
       step6details:
-        'Turn on your the headlights of your car and test the new taillight to make sure it is working properly. If it is not functioning correctly, double-check the wiring connections and ensure the taillight is properly secured.',
-      step7: 'Reassemble the taillight assembly:',
+        'Carefully install the replacement taillight by connecting the wiring harness and securing it in place with any screws or bolts that were removed.',
+      step7: 'Test the taillight: ',
       step7details:
+        'Turn on your the headlights of your car and test the new taillight to make sure it is working properly. If it is not functioning correctly, double-check the wiring connections and ensure the taillight is properly secured.',
+      step8: 'Reassemble the taillight assembly:',
+      step8details:
         'If you had to remove the entire taillight assembly, make sure to reattach it properly to the vehicle.',
     },
     {
@@ -306,27 +303,33 @@ const data = {
       symptom7: 'Worn or damaged rubber:',
       description7:
         'Over time, the rubber on the wiper blades can wear down or become damaged, leading to decreased wiping effectiveness.',
-      step1: 'Check the condition of the wiper blades:',
+      repairslug: 'worn-out wipers repair',
+      step1: 'Safety Precautions',
       step1details:
-        ' Inspect the wiper blades for any cracks, tears, or signs of wear. If they are severely damaged, they may need to be replaced instead of repaired.',
-      step2: 'Clean the wiper blades:',
+        'Turn off the Car engine and remove the key from ignition. Make sure the wipers are set to the off position',
+      step2: 'Check the condition of the wiper blades:',
       step2details:
-        'Use a clean cloth and some warm, soapy water to clean the wiper blades. This can help remove any dirt or debris that may be causing the blades to skip or streak.',
-      step3: 'Check the wiper arm tension:',
+        ' Inspect the wiper blades for any cracks, tears, or signs of wear. If they are severely damaged, they may need to be replaced instead of repaired.',
+      step3: 'Clean the wiper blades:',
       step3details:
-        'Check the tension of the wiper arm to ensure that it is securely holding the wiper blade against the windshield. If the arm is loose, tighten the nut or bolt that secures it to the wiper motor.',
-      step4: 'Adjust the wiper arm angle:',
+        'Use a clean cloth and some warm, soapy water to clean the wiper blades. This can help remove any dirt or debris that may be causing the blades to skip or streak.',
+      step4: 'Check the wiper arm tension:',
       step4details:
-        'If the wiper blade is not making full contact with the windshield, adjust the angle of the wiper arm so that it is more perpendicular to the glass.',
-      step5: 'Replace the wiper blades:',
+        'Check the tension of the wiper arm to ensure that it is securely holding the wiper blade against the windshield. If the arm is loose, tighten the nut or bolt that secures it to the wiper motor.',
+      step5: 'Adjust the wiper arm angle:',
       step5details:
-        'If the wiper blades are worn or damaged beyond repair, they will need to be replaced. Purchase new wiper blades that are compatible with the make and model of your car, and follow the manufacturer`s instructions for installation.',
-      step6: 'Test the wipers:',
+        'If the wiper blade is not making full contact with the windshield, adjust the angle of the wiper arm so that it is more perpendicular to the glass.',
+      step6: 'Replace the wiper blades:',
       step6details:
+        'If the wiper blades are worn or damaged beyond repair, they will need to be replaced. Purchase new wiper blades that are compatible with the make and model of your car, and follow the manufacturer`s instructions for installation.',
+      step7: 'Test the wipers:',
+      step7details:
         'Turn on the wipers and test them to ensure that they are functioning properly. Make sure they are wiping cleanly and evenly across the windshield.',
+      step8: 'Check the spray nozzle of the wipers',
+      step8details:
+        'While testing the wipers if the nozzles are spray water in wrongly or fail to spray,you can get a sharp needle or toothpick and clean the nozzle while the car is off and wipers are off. Then you can test the wipers again',
     },
   ],
-  symptoms: [{}],
 };
 
 export default data;

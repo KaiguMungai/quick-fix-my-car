@@ -23,10 +23,11 @@ export default function Layout({ title, children }) {
       <div className="flex min-h-screen flex-col justify-between">
         <header>
           <nav className="flex h-40 items-center px-5 shadow-md justify-between">
-            <Link href="/" legacyBehavior>
-              <a className="text-3xl font-bold"> Quick Fix My Car</a>
-            </Link>
+            <a className="text-3xl font-bold"> Quick Fix My Car</a>
             <div>
+              <Link href="/" legacyBehavior>
+                <a className="px-5 link text-lg">Home</a>
+              </Link>
               {status === 'loading' ? (
                 'Loading'
               ) : session?.user ? (

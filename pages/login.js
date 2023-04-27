@@ -37,14 +37,9 @@ export default function LoginScreen() {
   };
   return (
     <Layout title="Log In">
-      <nav className="flex h-12  breakdown-nav items-center px-5 shadow-md justify-between">
+      <div className="flex h-12  breakdown-nav items-center px-5 shadow-md justify-between">
         <h1 className="text-2xl font-bold">Log In</h1>
-        <div>
-          <Link href="/" legacyBehavior>
-            <a className="link">Back to Home Page</a>
-          </Link>
-        </div>
-      </nav>
+      </div>
       <form
         className="mx-auto max-width-screen-md"
         onSubmit={handleSubmit(submitHandler)}
@@ -88,12 +83,7 @@ export default function LoginScreen() {
           )}
         </div>
         <div className="mb-4 py-4">
-          <button
-            onClick={() => router.push('breakdown?redirect=/slug')}
-            className="primary-button"
-          >
-            Log In
-          </button>
+          <button className="primary-button">Log In</button>
         </div>
         <div className="mb-4">
           Don&apos;t have an account? &nbsp;
